@@ -1,0 +1,10 @@
+---
+
+- name: test
+  hosts: all
+  connection: local
+
+  tasks:
+    - name: output file
+      debug: msg="the value of foo.txt is {{lookup('file', '/etc/actors.xml') }}"
+
