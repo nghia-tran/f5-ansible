@@ -6,5 +6,5 @@
 
   tasks:
     - name: output file
-      debug: msg="the value of foo.txt is {{lookup('file', '/etc/actors.xml') }}"
+      debug: msg="the value of foo.txt is {{lookup('file', './files/actors.xml') }}"
 
